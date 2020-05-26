@@ -1,0 +1,3 @@
+Middleware is the code that gets executed between the user request and the server itself
+
+middleware functions can modify the request and response obj

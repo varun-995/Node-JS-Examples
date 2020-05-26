@@ -1,0 +1,17 @@
+Semantic versioning is a standard that node.js packages follow, it allows us to know what kind of changes
+have occurred in the updated version of the package
+
+ex:- "lodash": "^4.17.11"  // major.minor.patch
+
+4.17.12 means it is patch wherein a bug is fixed
+4.18.11 means it is a minor change and it added new functionalities and may have deprecated some old functionalities
+but you can still use it, it is a non breaking change
+5.0.0 means it is a major change(aka breaking change) and it will not be compatible with any version of 4.xx.xx
+
+^ symbolizes that i don't want to make any major updates so that means right now i'm on version 4 as the major but
+if there is a minor update or a patch update go ahead and download those new packages
+
+~ symbolizes that you only want patch updates so let's say i'm on 4.17, i only want to change the last number(4.17.x), so if 
+for example v4.18 comes out this tilde symbol will say hey do not update to that package
+
+if there is noting before version no ^ or ~ sign that says that this package will not update, it will always be on 4.17.11

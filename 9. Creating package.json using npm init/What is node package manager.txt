@@ -1,0 +1,37 @@
+A node package manager install packages, a package is basically reuseable code that we can 
+include within our own application, it is a folder with one or more modules within it
+
+npm init is used to generate package.json
+npm init --yes is used to skip configuration questions that are normally asked when you type npm init
+
+
+to install a package use npm install package_name
+Installing a package creates an entry under dependencies key in package.json. Installed module is present under 
+node_modules
+
+more on npm install - https://stackoverflow.com/questions/43664200/what-is-the-difference-between-npm-install-and-npm-run-build
+    npm build no longer exists. You must call npm run build now. More info below.
+
+    TLDR;
+    npm install: installs dependencies, then calls the install from the package.json scripts field.
+    npm run build: runs the build field from the package.json scripts field.
+
+    NPM Scripts Field - https://docs.npmjs.com/misc/scripts
+    There are many things you can put into the npm package.json scripts field. 
+    Check out the documentation link above more above the lifecycle of the scripts - most have pre and post hooks that you can 
+    run scripts before/after install, publish, uninstall, test, start, stop, shrinkwrap, version.
+
+    To Complicate Things:-
+        npm install is not the same as npm run install
+
+        npm install installs package.json dependencies, then runs the package.json scripts.install
+            (Essentially calls npm run install after dependencies are installed.
+
+        npm run install only runs the package.json scripts.install, it will not install dependencies.
+
+        npm build used to be a valid command (used to be the same as npm run build) but it no longer is; it is now an internal command. If you run it 
+        you'll get: npm WARN build npm build called with no arguments. Did you mean to npm run-script build? You can read more on the documentation:
+        https://docs.npmjs.com/cli/build
+
+
+to uninstall a package use npm uninstall package_name

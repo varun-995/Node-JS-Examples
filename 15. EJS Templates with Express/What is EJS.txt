@@ -1,0 +1,3 @@
+EJS is a template language that allow us to write more dynamic Webpages
+
+We need = equal sign after <% if we want to output that line onto the html file

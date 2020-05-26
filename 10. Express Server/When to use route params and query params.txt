@@ -1,0 +1,9 @@
+You use route parameters when you must have that data so for example let's say 
+name was an absolute must, i cannot have a blank name and i cannot have a blank age so i would use a 
+route parameter and let's say i want to give some optional settings in that case i would use a query string
+parameter so for example when we pass then sort we could be sorting the data by age and would be an optional setting
+but i would need the name and the age to begin with so i would use a route parameter for that and if the user wants to sort
+the data then i will use a query string parameter for that.
+
+
+http://localhost:3000/example/varun/24?tutorial=paramstutorial&sort=byage

@@ -1,0 +1,1 @@
+Static files are HTML files, CSS, client side javascript, images, videos, etc

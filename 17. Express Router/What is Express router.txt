@@ -1,0 +1,2 @@
+It allows us to do separate our routes in different files which in turn makes our code more managebale as opposed
+to just sticking our routes with the Wxample1.js file

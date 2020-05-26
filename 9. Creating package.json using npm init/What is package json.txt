@@ -1,0 +1,5 @@
+holds all the metadata for project, metadata being name of the project, version number, etc
+
+main key in package.json - it let us know which file should be use to start our node application so for example
+if i am building a website and i upload it to a server it would let the server know that that was our entry point 
+to our application

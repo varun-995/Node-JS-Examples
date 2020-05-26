@@ -1,0 +1,2 @@
+Express is basically a web framework for node js, a few tutorials back we used httpserver and filesystem to serve static 
+files with express however you can accomplish that and much more.
